@@ -1,0 +1,9 @@
+services:
+  db:
+    container_name: postgres_denis
+    image: postgres:16
+    environment:
+      - POSTGRES_USER=denis
+      - POSTGRES_PASSWORD=pershin
+    ports:
+    - 5432:5432
